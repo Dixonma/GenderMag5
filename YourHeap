@@ -1,0 +1,36 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+public class MDHeap {
+
+    public static void main(String[] args) {
+        // Create a max Heap of strings
+        PriorityQueue<String> heap = new PriorityQueue<>(Comparator.reverseOrder());
+        
+        // Add the first 20 songs to the heap
+        heap.offer("Bohemian Rhapsody");
+        heap.offer("Distance");
+        heap.offer("Low Down");
+        heap.offer("Shoulda");
+        heap.offer("Scarred");
+        heap.offer("Banking On Me ");
+        heap.offer("By Your Side ");
+        heap.offer("Made a Way");
+        heap.offer("What’s Wrong");
+        heap.offer("Wrong or Right");
+        heap.offer("Wasting Time");
+        heap.offer("Z Look Jamacian");
+        heap.offer("Billie Jean");
+        heap.offer("What’s Love??");
+        heap.offer("Off of You");
+        heap.offer("I Don’t Know ");
+        heap.offer("Dark Clouds");
+        heap.offer("Thriller");
+        heap.offer("Snooze");
+        heap.offer("Outta Time");
+        
+        // Print the heap
+        System.out.println(heap);
+    }
+
+}
