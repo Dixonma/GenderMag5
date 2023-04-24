@@ -1,0 +1,10 @@
+public interface MDQueue<E> {
+  public void addSong(E song);
+  public void deleteAll();
+  public boolean isEmpty();
+  public E peekSong();
+  public void pushSong(E song);
+  public void removeSong(E song);
+  public int size();
+}
+
